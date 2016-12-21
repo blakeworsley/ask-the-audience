@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Choices Against Humanity</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1 class="title">Choices Against Humanity</h1>
+    
+    <section class="server-messages">
+      <h3 id="connection-count"></h3>
+      <h3 id="status-message"></h3>      
+    </section>
+
+    <section class="choice-section">
+      <h2>Pick your Poison</h2>
+      <h3 id="vote-alert"></h3>
+      <div id="choices">
+        <button>A</button>
+        <button>B</button>
+        <button>C</button>
+        <button>D</button>
+      </div>
+      
+    </section>
+
+    <section class="votes-section">
+      <h2>Total Votes</h2>
+      <div id="votes">
+        <div class="total-a">Total A: 0</div>
+        <div class="total-b">Total B: 0</div>
+        <div class="total-c">Total C: 0</div>
+        <div class="total-d">Total D: 0</div>
+      </div>
+    </section>
+    
+    <!-- Make sure your JS is at the bottom of the body! -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
